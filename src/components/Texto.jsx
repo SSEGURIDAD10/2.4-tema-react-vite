@@ -9,7 +9,7 @@ const Texto = () => {
     const handlerClick = () => {
         console.log('Hola desde el boton');
         setMostrar(!mostrar);
-        setTitulo('Hola, aparezco y no me quito');
+        setTitulo('Hola, aparezco una vez y no me quito');
     };
 
     console.log('Estado de mostrar:', mostrar);
