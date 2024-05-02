@@ -9,11 +9,14 @@ const Texto = () => {
         console.log('Hola desde el boton');
         setMostrar(!mostrar);
         console.log(mostrar);
-    }
+    };
+
+    console.log('Estado de mostrar:', mostrar);
+    
   return (
     <Fragment>
         {mostrar && <h1>Titulo del componente Texto</h1>}
-        <button onClick={handlerClick}>Log</button>
+        <button onClick={handlerClick}>{mostrar ? 'Ocultar': 'Mostrar'}</button>
     </Fragment>
   )
 }
